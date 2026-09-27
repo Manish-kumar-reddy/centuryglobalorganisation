@@ -549,13 +549,11 @@ em.hl, .hl { font-style: italic; color: var(--orange); }
 
 /* ============ Owner on home page (same layout as About) ============ */
 .owner-home .split { grid-template-columns: 1fr 1.25fr; }
+.owner-home .owner-photo { height: auto; aspect-ratio: 4 / 5; object-fit: cover; object-position: center 18%; }
 @media (max-width: 980px) {
-  .owner-home .split { grid-template-columns: 1fr 1.3fr; gap: 28px; align-items: start; }
+  .owner-home .split { grid-template-columns: 1fr; gap: 36px; }
+  .owner-home .split-media { max-width: 380px; margin-inline: auto; width: 100%; }
 }
 @media (max-width: 640px) {
-  .owner-home .split { grid-template-columns: 40% 1fr; gap: 16px; }
-  .owner-home .section-title { font-size: 24px; }
-  .owner-home .split-copy p { font-size: 13px; line-height: 1.55; }
-  .owner-home .caption p { font-size: 15px; }
-  .owner-home .owner-badge { font-size: 9px; padding: 6px 10px; }
+  .owner-home .split-media { max-width: 300px; }
 }
