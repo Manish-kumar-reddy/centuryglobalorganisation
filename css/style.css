@@ -548,13 +548,13 @@ em.hl, .hl { font-style: italic; color: var(--orange); }
 .owner-badge svg { width: 15px; height: 15px; flex: none; }
 
 /* ============ Owner on home page ============ */
-.owner-home { padding-block: 88px; background: linear-gradient(180deg, var(--ivory), var(--sand)); }
-.owner-home-grid { display: grid; grid-template-columns: minmax(0, 380px) 1fr; gap: 64px; align-items: center; }
+.owner-home { padding-block: 72px; background: linear-gradient(180deg, var(--ivory), var(--sand)); }
+.owner-home-grid { display: grid; grid-template-columns: minmax(0, 300px) 1fr; gap: 64px; align-items: center; }
 .owner-home-photo { position: relative; }
 .owner-home-photo::before { content: ""; position: absolute; inset: 18px -18px -18px 18px; border: 1px solid var(--orange); border-radius: 4px; z-index: 0; }
 .owner-home-photo img { position: relative; z-index: 1; }
 .owner-home-copy p { color: var(--muted); max-width: 560px; }
 @media (max-width: 980px) {
   .owner-home-grid { grid-template-columns: 1fr; gap: 44px; }
-  .owner-home-photo { max-width: 340px; }
+  .owner-home-photo { max-width: 240px; }
 }
