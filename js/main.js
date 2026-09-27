@@ -107,7 +107,7 @@
     const swatches = document.querySelectorAll(".swatch");
     const reduce = window.matchMedia("(prefers-reduced-motion: reduce)").matches;
 
-    let accent = [255, 122, 26];
+    let accent = [201, 150, 47];
     let paused = reduce;
     let t = 0;
     let W = 0, H = 0;
@@ -204,7 +204,7 @@
       const pulse = 1 + Math.sin(t * 0.04) * 0.05;
       ctx.beginPath();
       ctx.arc(cx, cy, base * 0.8 * pulse, 0, Math.PI * 2);
-      ctx.fillStyle = "rgba(30,24,22,.85)";
+      ctx.fillStyle = "rgba(12,22,48,.9)";
       ctx.fill();
       ctx.strokeStyle = rgba(0.35);
       ctx.stroke();
